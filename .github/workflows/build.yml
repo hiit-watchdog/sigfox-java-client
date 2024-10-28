@@ -42,7 +42,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ github.token }}
           MAVEN_USER: ${{ vars.MAVEN_USER }}
-          MAVEN_PASSWORD: ${{ secrets.MAVEN_PASSWORD }}
-      
+          MAVEN_PASSWORD: ${{ secrets.HIITBOT_PAT }}
+
       - name: Update dependency graph
         uses: advanced-security/maven-dependency-submission-action@v4.1.1
